@@ -34,3 +34,67 @@ body {
     font-size: 25px;
     font-weight: 600;
 }
+
+.section3 .project-card {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: 280px;
+    margin: 80px auto;
+    overflow: hidden;
+    border-radius: 24px;
+    text-decoration: none;
+    color: white;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.section3 .project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.section3 .project-card .carousel,
+.section3 .project-card .carousel-inner,
+.section3 .project-card .carousel-item {
+    height: 100%;
+}
+
+.section3 .project-card h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.section3 .project-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+
+    transform: translateY(100%);
+    transition: transform 0.35s ease;
+    transition-delay: 0.1s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 .project-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
+}
+.section3 .project-card:hover .project-card-overlay{
+    transform: translateY(0);
+}
+.section3 .project-card:hover h2{
+    opacity: 0;
+    transform: translate(-50%, -40%);
+}
+.section3 .project-card:hover img {
+    transform: scale(1.08);
+}
