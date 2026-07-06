@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0C122C;
+    color: #CCD2C4;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.section1 h1 {
+    color: #AEC7C4;
+    font-size: 51px;
+    font-weight: 800;
+}
